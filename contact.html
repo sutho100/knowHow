@@ -61,34 +61,36 @@
 				</div>
 				<div class="col-md-6 col-md-offset-1">
 					<div class="well well-sm">
-						<form action="" class="form-horizontal" id="commentForm" method="post">
-							<fieldset>
-								<legend class="text-center">Contact us</legend> <!-- Name input-->
-								<div class="form-group">
-									<label class="col-md-3 control-label" for="cname">Name</label>
-									<div class="col-md-9">
-										<input class="form-control" id="cname" name="name" minlength="2" required placeholder="Your name" type="text"  > 
-									</div>
-								</div><!-- Email input-->
-								<div class="form-group">
-									<label class="col-md-3 control-label" for="cemail">Your E-mail</label>
-									<div class="col-md-9">
-										<input class="form-control" id="cemail" name="email" required placeholder="Your email" type="email">
-										<div id="hint"></div>
-									</div>
-								</div><!-- Message body -->
-								<div class="form-group">
-									<label class="col-md-3 control-label" for="ccomment">Your message</label>
-									<div class="col-md-9">
-										<textarea class="form-control" id="ccomment" name="comment" minlength="10" required placeholder="Please enter your message here..." rows="5" ></textarea>
-									</div>
-								</div><!-- Form actions -->
-								<div class="form-group">
-									<div class="col-md-12 text-right">
-										<button class="btn btn-primary btn-lg" type="submit">Submit</button>
-									</div>
-								</div>
-							</fieldset>
+						<form action="" class="form-horizontal" id="commentForm" method="post" onsubmit="return validateMyForm();">
+                            <fieldset>
+                                <legend class="text-center">Contact us</legend> <!-- Name input-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="name">Name</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control" id="name" name="name" minlength="2" placeholder="Your name" type="text">
+                                        <div id="resultName"></div>
+
+                                    </div>
+                                </div><!-- Email input-->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="cemail">Your E-mail</label>
+                                    <div class="col-md-9">
+                                        <input class="form-control" id="email" name="email" placeholder="Your email" type="email">
+                                        <div id="result"></div>
+                                    </div>
+                                </div><!-- Message body -->
+                                <div class="form-group">
+                                    <label class="col-md-3 control-label" for="ccomment">Your message</label>
+                                    <div class="col-md-9">
+                                        <textarea class="form-control" id="ccomment" name="comment" minlength="10" placeholder="Please enter your message here..." rows="5"></textarea>
+                                    </div>
+                                </div><!-- Form actions -->
+                                <div class="form-group">
+                                    <div class="col-md-12 text-right">
+                                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
 						</form>
 					</div>
 				</div>
@@ -108,13 +110,13 @@
 			</ol><!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img alt="learn" height="100%" src="carousel/banner1.jpg" width="100%">
+					<img class="imgLearn" alt="learn" src="carousel/banner1.jpg">
 					<div class="carousel-caption text-center">
 						<p class="info">challenge yourself the easy way</p>
 					</div>
 				</div>
 				<div class="item">
-					<img alt="learn" height="100%" src="carousel/banner.jpg" width="100%">
+					<img class="imgLearn" alt="learn" src="carousel/banner.jpg">
 					<div class="carousel-caption">
 						<p class="info2">Join thousands and lead the competition</p>
 					</div>
@@ -130,25 +132,79 @@
 				<span class="sr-only">Next</span>
 			</a>-->
 		</div>
-		<footer>
-			<div class="footer1">
-				<p>Connect with us through social media</p>
-				<ul class="socialmedia">
-					<li>
-						<a href="http://www.facebook.com"><img src="img/facebook.png"></a>
-					</li>
-					<li>
-						<a href="http://www.twitter.com"><img src="img/twitter.png"></a>
-					</li>
-					<li>
-						<a href="http://www.linkedin.com"><img src="img/linkedin.png"></a>
-					</li>
-					<li>
-						<a href="http://www.youtube.com"><img src="img/youtube.png"></a>
-					</li>
-				</ul>
-			</div>
-		</footer>
+        <footer>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="connect">Connect With us through Social Media</p>
+                    <ul class="socialmedia">
+                        <li>
+                            <a href="http://www.facebook.com"><img src="img/facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com"><img src="img/twitter.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.linkedin.com"><img src="img/linkedin.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.youtube.com"><img src="img/youtube.png"></a>
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="copyright">
+                        <p>&copy;contact@knowhow.com</p>
+                        <p>2017knowhow.com, inc.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="sitemap">
+                        <ul>
+                            <li>
+                                <a href="#"><span>Home</span></a>
+                            </li>
+                            <li>
+                                <a href="lesson.html"><span>Lessons</span></a>
+                            </li>
+                            <li>
+                                <a href="pricing.html"><span>Pricing</span></a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span>Contact</span></a>
+                            </li>
+                            <li data-toggle="modal" data-target="#login-modal"><a href="#">SignUp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+        <!--Modal start-->
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog">
+                <div class="loginmodal-container">
+                    <h1>Login to Your Account</h1><br>
+                    <form>
+                        <input type="text" name="user" placeholder="Username">
+                        <input type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+
+                    <div class="login-help">
+                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal end-->
 	</div>
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js">
 		</script>
@@ -158,8 +214,8 @@
 		<script src="js/jquery-3.1.1.min.js">
 		</script>
 		
-		<script src="js/jquery.validate.min.js">
-		</script>
+		<!--<script src="js/jquery.validate.min.js">
+		</script>-->
 	    <script src="js/main.js">
 		
 	</script>
