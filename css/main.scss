@@ -140,6 +140,8 @@ body {
    
 }
 
+
+
 .imgLearn {
     width: 100%;
     height: 100%;
@@ -207,8 +209,8 @@ span {
   background-image: url('../img/ipad.jpg');
   background-position: center center;
   background-size: cover;
-  min-height: 800px;
-  padding-bottom: 50px;
+  min-height: 854px;
+  
 }
 h1 {
   padding-top: 25px;
@@ -294,17 +296,18 @@ h1 {
 .glyphicon {
   color: black;
 }
+
+
 .selection {
   width: 100%;
   height: auto;
   position: relative;
   background-color: #ffffe9;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
 }
 .selection img {
-  margin: 15px;
-  max-width: 100%;
+  margin-top: 15px;
+  width: 100%;
   height: auto;
   text-align: center;
   -webkit-box-shadow: 0 8px 6px -6px black;
@@ -683,6 +686,16 @@ box-shadow: 2px 2px 2px 7px #F2F2F2;
 
 /*********** Small/Medium devices ***********/
 @media screen and (min-width: 0px) and (max-width: 991px) {
+
+    .bgimage {
+  padding-bottom: 50px;
+  
+}
+
+    .popular {
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
     .new {
         text-align: center;

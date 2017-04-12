@@ -1,37 +1,17 @@
 ﻿// autoComplete search
 
-$(function () {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $(".form-control").autocomplete({
-        source: availableTags
-    });
-});
+var options = {
+    data: ["Design", "HTML", "Business", "History", "Science", "Economics"],
 
-//autocomplete hack width
-$.ui.autocomplete.prototype._resizeMenu = function () {
-    var ul = this.menu.element;
-    ul.outerWidth(this.element.outerWidth());
-}
+    theme: "plate-dark"
+};
+
+
+
+$(".form-control").easyAutocomplete(options);
+
+
+
+
+
+

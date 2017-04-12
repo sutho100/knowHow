@@ -1,17 +1,18 @@
-//validate
+//validate form
 function validateMyForm()
 {
-    var validationStatus = true;
-    $("#result").text("");
+    var validationStatus = true;    
+    $("#result").text("");      //Default div text
 
-    var name = $('#name').val();
+    var name = $('#name').val();    
 
     //validate name
-    if (name.length == 0) {
+    if (name.length === 0) {
         $('#resultName').text("Please enter your name"); // This Segment Displays The Validation Rule For All Fields
         $("#resultName").css("color", "red");
         $("#name").focus();
         validationStatus = false;
+        return false;
     }
 
     //validate email
@@ -22,8 +23,18 @@ function validateMyForm()
     } else {
         $("#result").text(emailText + " is not valid :(");
         $("#result").css("color", "red");
-        //$("#result").focus();
+        $("#email").focus();
         validationStatus = false;
+        return false;
+    }
+
+    //validate message
+    if ($('#ccomment').val().length < 5) {
+        $('#resultComment').text("Please write a message min 5 words");
+        $("#resultComment").css("color", "red");
+        $("#ccomment").focus();
+        validationStatus = false;
+        return false;
     }
 
     //check if form failed

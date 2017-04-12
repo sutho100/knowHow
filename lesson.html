@@ -8,6 +8,8 @@
 	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link href="apple-touch-icon.png" rel="apple-touch-icon"><!-- Place favicon.ico in the root directory -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/easy-autocomplete.min.css" rel="stylesheet">
+    <link href="css/easy-autocomplete.themes.min.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<script src="js/vendor/modernizr-2.8.3.min.js">
@@ -38,7 +40,7 @@
 							<li>
 								<a href="contact.html"><span>Contact</span></a>
 							</li>
-							<li class="btn btn-primary" type="button">SignUp</li>
+							<li class="btn btn-primary" type="button">Login</li>
 						</ul>
 					</div>
 				</div>
@@ -49,17 +51,20 @@
 	   
 		   <div class="number2">
 			   <h1 class="amazing">Search amazing courses</h1>
-			   <div class="search container">
-				   <div class="row">
-					   <div class="col-sm-6 col-sm-offset-3">
-						   <div id="imaginary_container">
-							   <div class="input-group stylish-input-group">
-								   <input class="form-control" placeholder="Search" type="text"> <span class="input-group-addon"><button type="submit"><span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span></button></span>
-							   </div>
-						   </div>
-					   </div>
-				   </div>
-			   </div>
+         <div class="search container">
+             <div class="row">
+                 <div class="col-sm-6 col-sm-offset-3">
+                     <form>
+                         <div id="imaginary_container">
+                             <div class="input-group stylish-input-group">
+                                 <input class="form-control" placeholder="Search" type="text"> <span class="input-group-addon"><button type="submit" action="#"><span class="input-group-addon"><span class="glyphicon glyphicon-search"></span></span></button></span>
+
+                             </div>
+                         </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
 		   </div>
 	   
 		
@@ -73,17 +78,17 @@
                 <div class="row">
                     <section class="col-sm-6 col-lg-3">
 
-                        <a href="#"><img src="img/science1.jpg" alt="Science" />
+                        <a href="#"><img src="img/science1.jpg" alt="Science" /></a>
 
                     </section>
                     <section class="col-sm-6 col-lg-3">
 
-                        <a href="#"><img src="img/history1.jpg" alt="History" />
+                        <a href="#"><img src="img/history1.jpg" alt="History" /></a>
 
                     </section>
                     <section class="col-sm-6 col-lg-3">
 
-                        <a href="#"><a href="#"><img src="img/design.jpg" alt="Design" /></a>
+                        <a href="#"><img src="img/design.jpg" alt="Design" /></a>
 
                     </section>
                     <div class="col-sm-6 col-lg-3">
@@ -179,16 +184,17 @@
 	</script>
 	<script src="js/jquery-3.1.1.min.js">
 	</script>
-	<script src="js/jquery-ui.min.js">
+	<!--<script src="js/jquery-ui.min.js">
 	</script>
 	<script src="css/jquery-ui.min.css">
 	</script>
 	<script src="css/jquery-ui.structure.min.css">
 	</script>
 	<script src="css/jquery-ui.theme.min.css">
-	</script>
+	</script>-->
 	<script src="js/bootstrap.min.js">
 	</script>
+    <script src="js/jquery.easy-autocomplete.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
 </body>

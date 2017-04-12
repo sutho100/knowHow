@@ -19,6 +19,7 @@
 	<div id="wrapper">
 		<header>
 			<nav class="navbar navbar-default navbar-static-top">
+
 				<div class="container">
 					<div class="navbar-header">
 						<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#collapsemenu" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#"></a>
@@ -29,21 +30,19 @@
 								<a href="index.html"><span>Home</span></a>
 							</li>
 							<li>
-								<a href="lesson.html"><span>Lessons</span></a>
+								<a href="#"><span>Lessons</span></a>
 							</li>
 							<li>
 								<a href="pricing.html"><span>Pricing</span></a>
 							</li>
 							<li>
-								<a href="#"><span>Contact</span></a>
+								<a href="contact.html"><span>Contact</span></a>
 							</li>
-							<li class="btn btn-primary" type="button">SignUp</li>
-							<li style="list-style: none; display: inline">
-								<div class=""></div>
-							</li>
+							<li class="btn btn-primary" type="button">Login</li>
 						</ul>
 					</div>
 				</div>
+
 			</nav>
 		</header>
 		<div class="number2">
@@ -62,43 +61,44 @@
 				<div class="col-md-6 col-md-offset-1">
 					<div class="well well-sm">
 						<form action="" class="form-horizontal" id="commentForm" method="post" onsubmit="return validateMyForm();">
-                            <fieldset>
-                                <legend class="text-center">Contact us</legend> <!-- Name input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="name">Name</label>
-                                    <div class="col-md-9">
-                                        <input class="form-control" id="name" name="name" minlength="2" placeholder="Your name" type="text">
-                                        <div id="resultName"></div>
+							<fieldset>
+								<legend class="text-center">Contact us</legend> <!-- Name input-->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="name">Name</label>
+									<div class="col-md-9">
+										<input class="form-control" id="name" name="name" placeholder="Your name" type="text">
+										<div id="resultName"></div>
 
-                                    </div>
-                                </div><!-- Email input-->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="cemail">Your E-mail</label>
-                                    <div class="col-md-9">
-                                        <input class="form-control" id="email" name="email" placeholder="Your email" type="email">
-                                        <div id="result"></div>
-                                    </div>
-                                </div><!-- Message body -->
-                                <div class="form-group">
-                                    <label class="col-md-3 control-label" for="ccomment">Your message</label>
-                                    <div class="col-md-9">
-                                        <textarea class="form-control" id="ccomment" name="comment" minlength="10" placeholder="Please enter your message here..." rows="5"></textarea>
-                                    </div>
-                                </div><!-- Form actions -->
-                                <div class="form-group">
-                                    <div class="col-md-12 text-right">
-                                        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
-                                    </div>
-                                </div>
-                            </fieldset>
+									</div>
+								</div><!-- Email input-->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="cemail">Your E-mail</label>
+									<div class="col-md-9">
+										<input class="form-control" id="email" name="email" placeholder="Your email" type="email">
+										<div id="result"></div>
+									</div>
+								</div><!-- Message body -->
+								<div class="form-group">
+									<label class="col-md-3 control-label" for="ccomment">Your message</label>
+									<div class="col-md-9">
+										<textarea class="form-control" id="ccomment" name="comment" placeholder="Please enter your message here..." rows="5"></textarea>
+                                        <div id="resultComment"></div>
+									</div>
+								</div><!-- Form actions -->
+								<div class="form-group">
+									<div class="col-md-12 text-right">
+										<button class="btn btn-primary btn-lg" type="submit">Submit</button>
+									</div>
+								</div>
+							</fieldset>
 						</form>
 					</div>
 				</div>
 			</div>
-            <div class="google">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3613.3775136308313!2d151.212855752234!3d-33.851472381163106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68948eb717c0c43e!2sSydney+Harbour+Bridge!5e0!3m2!1sen!2sau!4v1490003917363" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="google">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3613.3775136308313!2d151.212855752234!3d-33.851472381163106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x68948eb717c0c43e!2sSydney+Harbour+Bridge!5e0!3m2!1sen!2sau!4v1490003917363" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-            </div>
+			</div>
 		</div>
 		<div class="carousel slide" data-interval="8000" data-ride="carousel" id="myCarousel">
 			<!-- Indicators -->
@@ -132,79 +132,79 @@
 				<span class="sr-only">Next</span>
 			</a>-->
 		</div>
-        <footer>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="connect">Connect With us through Social Media</p>
-                    <ul class="socialmedia">
-                        <li>
-                            <a href="http://www.facebook.com"><img src="img/facebook.png"></a>
-                        </li>
-                        <li>
-                            <a href="http://www.twitter.com"><img src="img/twitter.png"></a>
-                        </li>
-                        <li>
-                            <a href="http://www.linkedin.com"><img src="img/linkedin.png"></a>
-                        </li>
-                        <li>
-                            <a href="http://www.youtube.com"><img src="img/youtube.png"></a>
-                        </li>
-                        <li>
+		<footer>
+			<div class="row">
+				<div class="col-md-4">
+					<p class="connect">Connect With us through Social Media</p>
+					<ul class="socialmedia">
+						<li>
+							<a href="http://www.facebook.com"><img src="img/facebook.png"></a>
+						</li>
+						<li>
+							<a href="http://www.twitter.com"><img src="img/twitter.png"></a>
+						</li>
+						<li>
+							<a href="http://www.linkedin.com"><img src="img/linkedin.png"></a>
+						</li>
+						<li>
+							<a href="http://www.youtube.com"><img src="img/youtube.png"></a>
+						</li>
+						<li>
 
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <div class="copyright">
-                        <p>&copy;contact@knowhow.com</p>
-                        <p>2017knowhow.com, inc.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<div class="copyright">
+						<p>&copy;contact@knowhow.com</p>
+						<p>2017knowhow.com, inc.</p>
 
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="sitemap">
-                        <ul>
-                            <li>
-                                <a href="#"><span>Home</span></a>
-                            </li>
-                            <li>
-                                <a href="lesson.html"><span>Lessons</span></a>
-                            </li>
-                            <li>
-                                <a href="pricing.html"><span>Pricing</span></a>
-                            </li>
-                            <li>
-                                <a href="contact.html"><span>Contact</span></a>
-                            </li>
-                            <li data-toggle="modal" data-target="#login-modal"><a href="#">SignUp</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="sitemap">
+						<ul>
+							<li>
+								<a href="#"><span>Home</span></a>
+							</li>
+							<li>
+								<a href="lesson.html"><span>Lessons</span></a>
+							</li>
+							<li>
+								<a href="pricing.html"><span>Pricing</span></a>
+							</li>
+							<li>
+								<a href="contact.html"><span>Contact</span></a>
+							</li>
+							<li data-toggle="modal" data-target="#login-modal"><a href="#">SignUp</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
 
 
-        </footer>
-        <!--Modal start-->
+		</footer>
+		<!--Modal start-->
 
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-            <div class="modal-dialog">
-                <div class="loginmodal-container">
-                    <h1>Login to Your Account</h1><br>
-                    <form>
-                        <input type="text" name="user" placeholder="Username">
-                        <input type="password" name="pass" placeholder="Password">
-                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-                    </form>
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+			<div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+					<form>
+						<input type="text" name="user" placeholder="Username">
+						<input type="password" name="pass" placeholder="Password">
+						<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+					</form>
 
-                    <div class="login-help">
-                        <a href="#">Register</a> - <a href="#">Forgot Password</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+					<div class="login-help">
+						<a href="#">Register</a> - <a href="#">Forgot Password</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <!--Modal end-->
+		<!--Modal end-->
 	</div>
 		<script src="https://code.jquery.com/jquery-1.12.0.min.js">
 		</script>
@@ -213,11 +213,9 @@
 		</script>
 		<script src="js/jquery-3.1.1.min.js">
 		</script>
+	
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>	
 		
-		<!--<script src="js/jquery.validate.min.js">
-		</script>-->
-	    <script src="js/main.js">
-		
-	</script>
 </body>
 </html>
